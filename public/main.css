@@ -1,15 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Allura&display=swap');
+
 html, body { margin: 0; padding: 0; }
 * { box-sizing: border-box; }
 
 body {
-  background-image: url('./images/wood_pattern.jpg');
   height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: #BA8C63;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+#outer-wrapper {
+  width: 80%;
+  height: 80%;
+  padding-bottom: 1px;
+  background: #D0312D;
+  border-radius: 10px;
+  box-shadow: 5px 5px 2px #000;
+  position: relative;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+#inner-wrapper {
+  height: 74%; 
+  width: 74%;
+  background: #DBE4EB;
+  border: 1px solid black;
+  border-radius: 20px;
+  overflow: hidden;
+}
 
-h1 { 
-  color: red;
+#controls-wrapper {
+  width: 100%;
+  height: 13%;
+  padding: 0 2% ;
+  position: absolute;
+  bottom:   3px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dial {
+  height: 96%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background: #F2F3F4;
+  box-shadow: 2px 2px 2px #000, 
+        inset 3px -3px rgb(185, 185, 185);
+}
+
+#branding-label {
+  width: 100%; 
+  height: 13%;
+  position: absolute;
+  top: 0;
+  font-family: Acme;
+  font-size: 1em;
+  color: #B88A44;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+#branding-label > span {
+  margin: 0 10px
+}
+
+.cursive {
+  font-family: Allura;
+  position: relative;
+  margin: unset;
+  top: 3px;
+  font-size: 3em;
+}
+
+#tm {
+  height: 1em;
+  aspect-ratio: 1/1;
+  position: relative;
+  right: 11px;
+  top: -10px;
 }
