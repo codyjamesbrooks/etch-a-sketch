@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="main.css">
   <script src="bundle.js" async></script>
 </head>
-<body data-controller="hello">
+<body>
   <div id="outer-wrapper">
     <div id="branding-label">
       <span>MAGIC</span>
@@ -14,12 +14,14 @@
       <span id="tm">™</span>
       <span>SCREEN</span>
     </div>
-    <div id="inner-wrapper"></div>
+    <div id="inner-wrapper"
+         data-controller="sketch"
+         data-sketch-pixel-class="pixel">
+    </div>
     <div id="controls-wrapper">
       <div class="dial"></div>
       <div class="dial"></div>
     </div>
   </div>
-  
 </body>
 </html>
