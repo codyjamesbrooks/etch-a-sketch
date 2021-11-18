@@ -3,6 +3,11 @@
 html, body { margin: 0; padding: 0; }
 * { box-sizing: border-box; }
 
+:root {
+  --rowCount: 1;
+  --colCount: 1;
+}
+
 body {
   height: 100vh;
   background: #BA8C63;
@@ -31,6 +36,9 @@ body {
   background: #DBE4EB;
   border: 1px solid black;
   border-radius: 20px;
+  display: grid;
+  grid-template-rows: repeat(var(--rowCount), 1fr);
+  grid-template-columns: repeat(var(--colCount), 1fr);
   overflow: hidden;
 }
 
@@ -85,4 +93,13 @@ body {
   position: relative;
   right: 11px;
   top: -10px;
+}
+
+.highlight { 
+  transition: 0s 180s;
+}
+
+.highlight:hover {
+  background: #565656;
+  transition: 0s;
 }
