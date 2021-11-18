@@ -4,8 +4,8 @@ html, body { margin: 0; padding: 0; }
 * { box-sizing: border-box; }
 
 :root {
-  --rowCount: ;
-  --colCount: ;
+  --rowCount: 1;
+  --colCount: 1;
 }
 
 body {
@@ -95,6 +95,11 @@ body {
   top: -10px;
 }
 
-.pixel:hover {
+.highlight { 
+  transition: 0s 180s;
+}
+
+.highlight:hover {
   background: #565656;
+  transition: 0s;
 }
